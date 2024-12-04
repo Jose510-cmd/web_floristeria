@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #007FFF;
+    --secondary-color: #93e9be;
+    --tertiary-color: #C0C0C0;
+    --quaternary-color: #D0D0FD;
+    --quinary-color: #001f3f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+li,
+label,
+input {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* ESTILOS HEADER O CABEZERA */
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: .4s;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: var(--quinary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+ul li:nth-child(7) a {
+    background: var(--quinary-color);
+    padding: 20px 20px;
+    color: #FFFFFF;
+}
+
+ul li:nth-child(7) a:hover {
+    border: 0;
+    background-color: var(--primary-color);
+}
+
+header #hero {
+    width: 100%;
+    /* background: url("../media/hero.png"); */
+    background-size: cover;
+    padding: 280px 0 180px;
+}
+
+#hero {
+    min-height: 35vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+#hero h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-bottom: 27px;
+}
+
+#hero p {
+    color: #FFFFFF;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#hero .btn-primary {
+    background-color: var(--quinary-color);
+    color: #FFFFFF;
+    padding: 15px 40px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 0;
+}
+
+#hero .btn-secondary {
+    color: var(--tertiary-color);
+    padding: 15px 40px;
+    font-weight: 500;
+    border: 0;
+    text-decoration: underline;
+    background: transparent;
+}
+
+
+/* ESTILOS MAIN O PRINCIPAL */
+
+main {
+    position: relative;
+    width: 100%;
+    background-color: var(--quinary-color);
+}
+
+main #section1 {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    padding-bottom: 140px;
+}
+
+#section1 .fila article {
+    padding: 40px 50px;
+    text-align: left;
+    box-shadow: 0px 4px 8px -5px #999999;
+}
+
+#section1 .fila article h2 img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+#section1 .fila article:nth-child(1) {
+    background-color: #FFFFFF;
+}
+
+#section1 .fila article:nth-child(1) h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#section1 .fila article:nth-child(1) p {
+    padding-left: 80px;
+    margin-bottom: 15px;
+}
+
+#section1 .fila article:nth-child(1) button {
+    background: transparent;
+    border: 0;
+    color: var(--quinary-color);
+    padding: 8px 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--quinary-color);
+    border-right: 4px solid var(--quinary-color);
+    margin-left: 80px;
+}
+
+#section1 .fila article:nth-child(2) {
+    background: var(--quinary-color);
+}
+
+#section1 .fila article:nth-child(2) h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+#section1 .fila article:nth-child(2) p {
+    padding-left: 80px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+#section1 .fila article:nth-child(2) button {
+    background: transparent;
+    border: 0;
+    color: var(--primary-color);
+    padding: 8px 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--quinary-color);
+    border-right: 4px solid var(--quinary-color);
+    margin-left: 80px;
+}
+
+#section1 .welcome {
+    padding-top: 200px;
+}
+
+#section1 .welcome article {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+#section1 .welcome .info {
+    width: 45%;
+    padding-right: 30px;
+}
+
+.welcome .info h3 {
+    font-size: 40px;
+}
+
+.welcome .info h3 b {
+    color: var(--quaternary-color);
+}
+
+#section1 .welcome .info p {
+    padding-left: 0px !important;
+    margin-top: 14px;
+    font-weight: 400;
+}
+
+#section1 .welcome article.info button {
+    background: var(--primary-color);
+    color: var(--quinary-color);
+    padding: 20px 40px;
+    margin-left: 0px;
+    border: 0;
+}
+
+#section1 .welcome article.fotos {
+    position: relative;
+}
+
+.welcome article.fotos div {
+    position: absolute;
+    z-index: 99;
+    bottom: -90px;
+    left: 10px;
+}
+
+.destacados {
+    position: absolute;
+    top: -40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#section2 {
+    background: #f5f5f5;
+    padding: 120px 0 110px;
+    width: 100%;
+    position: relative;
+}
+
+#section2 .info-section2 {
+    width: 60%;
+}
+
+#section2 .info-section2 h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#section2 .info-section2 h3 b {
+    color: var(--primary-color);
+}
+
+#section2 .info-section2 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#section2 .fila button {
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+    color: #FFF;
+}
+
+#section2 .fila button:hover {
+    border: 0;
+    background: var(--quinary-color);
+}
+
+#section2 .fila .card {
+    width: 30%;
+    max-width: 270px;
+    padding: 50px;
+    box-shadow: 0px 4px 8px -5px #999999;
+    margin-top: 50px;
+    border-bottom: 4px solid var(--primary-color);
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#section2 .fila .card::after {
+    width: 0%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--quinary-color);
+    z-index: 1;
+    transition: .4s;
+}
+
+#section2 .fila .card:hover::after {
+    width: 100%;
+}
+
+#section2 .fila .card:hover h4,
+#section2 .fila .card:hover p,
+#section2 .fila .card:hover li {
+    color: #FFFFFF;
+}
+
+#section2 .fila .card img {
+    width: 60px;
+    z-index: 9;
+    position: relative;
+}
+
+#section2 .fila .card h4 {
+    font-size: 25px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    z-index: 9;
+    position: relative;
+    transition: .4s;
+}
+
+#section2 .fila .card p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 9;
+    position: relative;
+    transition: .4s;
+}
+
+#section2 .fila .card ul {
+    padding-left: 20px;
+    margin-top: 14px;
+}
+
+#section2 .fila .card ul li {
+    margin: 10px 0;
+    font-weight: 400;
+    z-index: 9;
+    position: relative;
+    transition: .4s;
+}
+
+#section3 {
+    width: 100%;
+    position: relative;
+    background: url("../media/bg-section.jpg");
+    background-size: cover;
+}
+
+#section3 .fila .card-vertical {
+    width: 25%;
+    padding: 800px 40px 40px;
+    border-right: 1px solid #FFFFFF;
+    background: transparent;
+    transition: .4s;
+    position: relative;
+}
+
+#section3 .fila .card-vertical:hover {
+    background: #acacac40;
+    backdrop-filter: blur(10px);
+}
+
+#section3 .card-vertical h3 {
+    color: var(--quaternary-color);
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+#section3 .card-vertical h2 {
+    color: #FFFFFF;
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+
+#section3 .card-vertical p {
+    color: transparent;
+    margin-bottom: 14px;
+    font-size: 18px;
+    transition: .4s;
+}
+
+#section3 .card-vertical button {
+    background: #FFFFFF40;
+    color: var(--quaternary-color);
+    border: 0 transparent;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+#section3 .card-vertical .info-card {
+    position: absolute;
+    bottom: 40px;
+    transition: .4s;
+}
+
+#section3 .card-vertical:hover .info-card {
+    bottom: 140px;
+}
+
+#section3 .card-vertical:hover p {
+    color: #FFFFFF;
+}
+
+#section4 {
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    background: var(--primary-color);
+}
+
+#section4 h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#section4 h2 b {
+    color: var(--quinary-color);
+}
+
+#section4 p {
+    font-size: 18px;
+}
+
+#section5 {
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+    background-color: var(--quaternary-color);
+}
+
+#section5 h2 {
+    font-size: 34px;
+}
+
+#section5 h2 b {
+    color: var(--primary-color);
+}
+
+#section5 p {
+    font-size: 18px;
+}
+
+#section5 .card-metas {
+    width: 25%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#section5 .card-metas i {
+    font-size: 60px;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+    transition: .4s;
+}
+
+#section5 .card-metas:hover i {
+    color: var(--quinary-color);
+}
+
+#section5 .card-metas h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+#section5 .card-metas h4 {
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+footer {
+    padding: 40px 0 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+footer .container {
+    border-top: 1px solid #999999;
+    padding-top: 20px;
+}
